@@ -34,15 +34,16 @@ button {
     cursor: pointer;
 }
 
-
-
+.header-container {
+    background-color: var(--dark-bg-color);
+}
 
 .header {
+    margin: 0 auto;
+    width: 80vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
-    background-color: var(--dark-bg-color);
 }
 
 #headerLogo {
@@ -59,15 +60,18 @@ button {
     gap: 20px;
 }
 
+.top-container {
+    background-color: var(--dark-bg-color);
+}
+
 
 .topBox {
     display: flex;
     flex: 1;
     gap: 12px;
     box-sizing: border-box;
-    background-color: var(--dark-bg-color);
-    padding: 80px 60px;
-    width: 100%;
+    width: 80vw;
+    margin: 80px auto;
 }
 
 .topBox .left {
@@ -82,13 +86,16 @@ button {
     margin: 0;
 }
 
-.topBox button {
+button {
     width: max-content;
     padding: 8px 24px;
     font-size: 16px;
 }
 
 .placeholderBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     background-color: grey;
 }
@@ -96,10 +103,133 @@ button {
 
 
 
-
+.cardsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 60px 0;
+}
 
 .cardsBox h2 {
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    max-width: 200px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.card-square {
+    width: 100%;
+    height: 160px;
+    max-height: 200px;
+    border: 3px solid rgb(47, 150, 247);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+
+
+.quoteContainer {
+    width: 100%;
+    background-color: #E5E7EB;
+}
+
+.quoteBox {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 60px;
+
+}
+
+.quoteBox p {
+    padding: 0;
+    margin: 0;
+}
+
+.quoteBox .quote {
+    font-size: 36px;
+    font-style: italic;
+    color: var(--dark-bg-color);
+    text-align: justify;
+    font-weight: 300;
+}
+
+.quoteBox .author {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+
+
+
+.action-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.action-block {
+    margin: 0 auto;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 60px;
+    background-color: var(--button-color);
+    color: white;
+    padding: 30px 60px;
+    border-radius: 6px;
+}
+
+.action-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.action-block p {
+    padding: 0;
+    margin: 0;
+}
+
+.action-block .secondary-text {
+    font-size: 12px;
+}
+
+.action-block button {
+    border: 2px solid white;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--dark-bg-color);
+    padding: 40px;
+    font-size: 12px;
 }
