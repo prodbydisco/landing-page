@@ -1,0 +1,105 @@
+:root {
+    --dark-bg-color: #1F2937;
+    --button-color: #3882F6;
+    --text-white: #F9FAF8;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text {
+    color: var(--text-white);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.secondary-text {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+button {
+    background-color: var(--button-color);
+    color: var(--text-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: var(--dark-bg-color);
+}
+
+#headerLogo {
+    font-size: 24px;
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.navLinks {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.topBox {
+    display: flex;
+    flex: 1;
+    gap: 12px;
+    box-sizing: border-box;
+    background-color: var(--dark-bg-color);
+    padding: 80px 60px;
+    width: 100%;
+}
+
+.topBox .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    width: 50%;
+}
+
+.topBox p {
+    margin: 0;
+}
+
+.topBox button {
+    width: max-content;
+    padding: 8px 24px;
+    font-size: 16px;
+}
+
+.placeholderBox {
+    width: 50%;
+    background-color: grey;
+}
+
+
+
+
+
+
+.cardsBox h2 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
